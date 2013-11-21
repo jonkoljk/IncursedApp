@@ -48,8 +48,7 @@ public class GaleriaImagenes extends Activity implements ViewFactory {
 		imageSwitcher.setInAnimation(AnimationUtils.loadAnimation(this, android.R.anim.slide_in_left));
 		imageSwitcher.setOutAnimation(AnimationUtils.loadAnimation(this, android.R.anim.slide_out_right));
 		
-		@SuppressWarnings("deprecation")
-		Gallery gallery = (Gallery)findViewById(R.galeria1);
+		Gallery gallery = (Gallery)findViewById(R.id.galeria1);
 		gallery.setAdapter(new ImageAdapter(this));
 		gallery.setOnItemClickListener(new OnItemClickListener() {
 
